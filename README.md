@@ -39,7 +39,7 @@ No installation is required. Simply download or clone the repository, then open 
 
 ## Screenshots
 
-![Telegram Chat Recovery Interface](.\imgs\TCR_Interface.png)
+![Telegram Chat Recovery Interface](imgs/TCR_Interface.png)
 
 ## Contributions
 
