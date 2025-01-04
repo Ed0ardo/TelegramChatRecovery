@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telegram Chat Recovery Tool</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Telegram Chat Recovery Tool</h1>
+      <p class="description">
+        This tool allows you to recover a Telegram chat from a backup by
+        converting it into a WhatsApp-compatible format. You can upload multiple
+        backup files (JSON or HTML), and the tool will combine their contents
+        into a single TXT file. This file can then be reimported into Telegram
+        using the import feature from WhatsApp.
+        <strong>JSON format is preferred.</strong> All files must be of the same
+        format (either all JSON or all HTML).
+      </p>
+
+      <div class="file-upload">
+        <label for="fileInput">Upload your JSON or HTML files:</label>
+        <input type="file" id="fileInput" accept=".json,.html" multiple />
+      </div>
+
+      <div class="instructions">
+        <h2>Instructions:</h2>
+        <ol>
+          <li>Export your Telegram chat as JSON or HTML (preferably JSON).</li>
+          <li>Extract the backup ZIP file provided by Telegram.</li>
+          <li>
+            Upload the JSON or HTML files using the button above. You can select
+            multiple files at once.
+          </li>
+          <li>
+            The tool will combine the converted content into a single TXT file.
+          </li>
+          <li>Save the TXT file in the same folder as your Telegram backup.</li>
+          <li>
+            Select all files in the backup folder and create a new ZIP file.
+          </li>
+          <li>Send the ZIP file to yourself on WhatsApp.</li>
+          <li>
+            On WhatsApp, select the ZIP file, share it to Telegram, and choose
+            the chat where you want to import the conversation.
+          </li>
+          <li>Click "Import" to complete the process.</li>
+        </ol>
+      </div>
+
+      <div id="status" class="status"></div>
+    </div>
+
+    <script src="converter.js"></script>
+    <!-- ed0ardo -->
+  </body>
+</html>
